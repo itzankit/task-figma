@@ -4,12 +4,14 @@ import shieldImg from "./assests/images/Vector (33).png";
 import shieldTickImg from "./assests/images/Vector (34).png";
 import crossImg from "./assests/images/cross-icon.png";
 import { auditClose } from "./Redux/Action";
+import useWindowDimensions from "./ScreenSize";
 
 function AuditContent() {
   const dispatch = useDispatch();
   function handleClose() {
     dispatch(auditClose());
   }
+  const { windowWidth, windowHeight } = useWindowDimensions();
   return (
     <div className="overlay">
       <div className="audit-content">
@@ -18,8 +20,8 @@ function AuditContent() {
           <img
             style={{ cursor: "pointer" }}
             onClick={handleClose}
-            height="12px"
-            width="12px"
+            height="20px"
+            width="20px"
             src={crossImg}
           ></img>
         </div>

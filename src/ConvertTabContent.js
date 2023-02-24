@@ -9,7 +9,7 @@ function ConvertTabContent() {
   }
   return (
     <>
-      <div style={{ display: "flex", background: "#ffffff" }}>
+      <div className="convert-tab">
         <div className="convert-tab-left">
           <p className="convert-tab-para">
             Convert WOM to mWOM and stake mWOM to earn Magpie protocol revenue
@@ -20,7 +20,7 @@ function ConvertTabContent() {
             varying market rates (See PancakeSwap).
           </p>
         </div>
-        <div style={{ width: "50%", marginTop: "40px" }}>
+        <div className="convert-tab1">
           <div className="convert-tab-right">
             <div className="magpie-input-title">
               <div className="convert-tab-right-input-title">
@@ -30,7 +30,11 @@ function ConvertTabContent() {
             </div>
             <div>
               <div className="magpie-input-box">
-                <input className="magpie-input" placeholder={amount}></input>
+                <input
+                  className="magpie-input"
+                  placeholder={amount}
+                  type="number"
+                ></input>
                 <div style={{ display: "flex" }}>
                   <span onClick={handleClick} className="magpie-amount-max">
                     MAX
