@@ -10,19 +10,19 @@ function MagpiePool() {
   const { windowWidth, windowHeight } = useWindowDimensions();
   return (
     <div className="magpie-pool-layout">
-      <div style={{ display: "flex" }}>
-        <div className="magpie-pool-text">MAGPIE POOL</div>
-        {windowWidth > 850 && (
+      {windowWidth > 768 && (
+        <div className="pool-text-border">
+          <div className="magpie-pool-text">MAGPIE POOL</div>
           <p
             style={{
               borderBottom: "lightgray 2px solid",
               width: "850px",
-              marginBottom: "28px",
+              marginBottom: "8px",
               marginLeft: "65px",
             }}
           ></p>
-        )}
-      </div>
+        </div>
+      )}
       <div
         className={`${
           myState
@@ -33,10 +33,7 @@ function MagpiePool() {
         <MagpieHeader />
         <MagpieTabs />
       </div>
-      <div
-        className="magpie-pool-box-layout-without-content"
-        style={{ marginTop: "50px" }}
-      >
+      <div className="magpie-pool-box-layout-without-content">
         <StakeMgpHeader />
       </div>
     </div>

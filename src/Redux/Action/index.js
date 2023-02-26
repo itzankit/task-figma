@@ -38,3 +38,24 @@ export function diconnectWallet() {
     type: "DISCONNECTWALLET",
   };
 }
+export function showHeaderDropdown() {
+  return {
+    type: "DROPDOWNBOX",
+  };
+}
+export function showLanguageBox() {
+  return {
+    type: "LANGUAGEBOX",
+  };
+}
+export function closeHeaderDropdown() {
+  return {
+    type: "CLOSEHEADERBOX",
+  };
+}
+
+export function closeLanguageDropdown() {
+  return {
+    type: "CLOSELANGUAGEBOX",
+  };
+}

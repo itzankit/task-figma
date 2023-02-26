@@ -1,10 +1,7 @@
 *:focus {
   outline: none;
 }
-.container {
-  margin: 0;
-  padding: 0;
-}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -16,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 32px;
-  width: -webkit-fill-available;
   min-height: 82px;
   background: #f0f5ff;
   border-bottom: solid 2px #b7cfed;
@@ -33,7 +29,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #137ce7;
@@ -44,7 +40,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #0b366b;
@@ -56,7 +52,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 22px; */
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: #1fb488;
   display: flex;
@@ -92,7 +88,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  /* line-height: 22px; */
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: #137ce7;
 }
@@ -101,7 +97,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 22px; */
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: #0b366b;
   margin-left: 50px;
@@ -123,7 +119,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  /* line-height: 22px; */
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: #000000;
 }
@@ -145,25 +141,26 @@
 .all-wallet-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 18px 24px;
   gap: 10px;
   position: absolute;
   width: 500px;
-  height: 158px;
   left: 470px;
   top: 280px;
   background: #ffffff;
   border-radius: 6px;
+  justify-content: center;
 }
-
+.all-wallet-row {
+  display: flex;
+  justify-content: space-between;
+}
 .wallet-box {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 18px 24px;
   gap: 10px;
-  position: absolute;
   width: 190px;
   height: 20px;
   background: #ffffff;
@@ -210,7 +207,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  /* line-height: 22px; */
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: #137ce7;
   margin-left: 10px;
@@ -220,7 +217,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 22px; */
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: #0b366b;
 }
@@ -229,7 +226,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  /* line-height: 22px; */
+
   letter-spacing: 0.02em;
   color: #0b366b;
 }
@@ -248,27 +245,12 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   letter-spacing: 0.02em;
   color: #ffffff;
   cursor: pointer;
 }
-.metamask-wallet-position {
-  left: 20px;
-  top: 20px;
-}
-.binance-wallet-position {
-  right: 20px;
-  top: 20px;
-}
-.connect-wallet-position {
-  left: 20px;
-  bottom: 20px;
-}
-.fortMatice-wallet-position {
-  right: 20px;
-  bottom: 20px;
-}
+
 .governance-dropdown-content {
   border: solid 1px #b7cfed;
   border-radius: 6px;
@@ -293,7 +275,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   letter-spacing: 0.02em;
   color: #071320;
 }
@@ -315,7 +297,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 8px;
-  /* line-height: 10px; */
+  line-height: 10px;
   letter-spacing: 0.02em;
   color: #ffffff;
   border: #ffffff solid 1px;
@@ -335,7 +317,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
@@ -352,7 +334,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -368,7 +350,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   letter-spacing: 0.02em;
   color: #0b366b;
   padding-left: 10px;
@@ -425,7 +407,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -444,7 +426,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -477,7 +459,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -539,7 +521,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
-  /* line-height: 31px; */
+  line-height: 31px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -551,7 +533,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -560,9 +542,6 @@
   color: #658aaf;
 }
 
-.magpie-pool-layout {
-  width: -webkit-fill-available;
-}
 .magpie-pool-box-layout-with-content {
   width: 1030px;
   border-width: 2px 2px 2px 2px;
@@ -570,20 +549,25 @@
   border-color: #137ce7;
   border-radius: 8px;
   margin-left: 250px;
+  margin-top: 10px;
 }
 .magpie-pool-box-layout-without-content {
   width: 1030px;
   margin-left: 250px;
+  margin-top: 20px;
+}
+.pool-text-border {
+  display: flex;
+  justify-content: center;
+  margin-left: 35px;
 }
 .magpie-pool-text {
-  margin-left: 250px;
   margin-top: 20px;
-  margin-bottom: 20px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -647,7 +631,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   letter-spacing: 0.02em;
   color: #0b366b;
   padding-left: 10px;
@@ -658,7 +642,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -671,7 +655,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -701,7 +685,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
-  /* line-height: 18px; */
+  line-height: 18px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #5f7fc1;
@@ -720,7 +704,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
-  /* line-height: 18px; */
+  line-height: 18px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #5f7fc1;
@@ -748,7 +732,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   letter-spacing: 0.02em;
   color: #0b366b;
   padding: 30px;
@@ -763,7 +747,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  /* line-height: 21px; */
+  line-height: 21px;
   letter-spacing: 0.02em;
   color: #0b366b;
 }
@@ -772,7 +756,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 24px; */
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #0b366b;
   margin-right: 37px;
@@ -809,7 +793,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 21px; */
+  line-height: 21px;
   letter-spacing: 0.02em;
   color: #ffffff;
   cursor: pointer;
@@ -831,7 +815,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 24px; */
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -840,7 +824,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   letter-spacing: 0.02em;
   color: #0b366b;
   margin: 10px;
@@ -863,7 +847,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
@@ -875,7 +859,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
@@ -889,7 +873,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  /* line-height: 30px; */
+  line-height: 30px;
   letter-spacing: 0.02em;
   color: #0b366b;
 }
@@ -912,7 +896,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 17px; */
+  line-height: 17px;
   letter-spacing: 0.02em;
   color: #0b366b;
 }
@@ -946,7 +930,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -960,7 +944,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  /* line-height: 19px; */
+  line-height: 19px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -980,7 +964,7 @@
   font-style: normal;
   font-weight: 1000;
   font-size: 25px;
-  /* line-height: 19px; */
+  line-height: 19px;
   color: #137ce7;
 }
 
@@ -996,293 +980,441 @@
   font-style: normal;
   font-weight: 1000;
   font-size: 25px;
-  /* line-height: 19px; */
+  line-height: 19px;
   color: #137ce7;
 }
 
-@media (max-width: 850px) {
-  .app {
-    width: 100%;
+/*MOBILE RESPONSIVE*/
+@media (max-width: 768px) {
+  .header {
+    height: 68px;
+    padding: 16px;
+    min-height: 0;
+    background: #ffffff;
   }
-  .layout {
+  .header-mobile-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #0b366b;
+  }
+  .convert-wom-text {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+  }
+  .all-amount-layout {
+    flex-direction: row;
     justify-content: space-between;
-    height: 100%;
+    width: 343px;
+    margin: auto;
+  }
+  .amount-and-tag {
+    width: 109px;
+    margin-left: 10px;
+  }
+  .amount-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .tag-text {
+    font-size: 10px;
+    line-height: 12px;
+    color: #0b366b;
+  }
+  .price-box {
+    width: 109px;
+    height: 66px;
+    margin: 0;
+  }
+  .pool-text-border {
+    margin-left: 0;
+  }
+  .magpie-pool-header-layout,
+  .magpie-pool-frax-header-layout,
+  .magpie-pool-stake-mgp-header-layout {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    width: 343px;
+    height: 109px;
+    padding: 10px, 12px;
+    background: #ffffff;
+  }
+  .magpie-pool-header-layout-mobile-with-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    padding: 10px 12px;
+    height: 109px;
+    background: #137ce7;
+    border-width: 2px 2px 0px 2px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .magpie-header-text {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+  }
+  .magpie-header-text-mobile-with-content {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #0b366b;
+  }
+  .magpie-header-amount-mobile-with-content {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: white;
+  }
+  .magpie-header-amount {
+    font-size: 10px;
+    line-height: 12px;
   }
   .magpie-pool-box-layout-without-content {
     width: 100%;
-    margin: 0;
-  }
-  .all-amount-layout {
-    width: 100%;
-    margin: 0;
-  }
-
-  .magpie-pool-box-layout-with-content {
-    margin: 0;
-    width: 100%;
-  }
-  .header {
+    margin: 10px 0 0 0;
     display: flex;
-    padding: 0;
-    justify-content: unset;
+    justify-content: center;
   }
-  .title {
-    margin-left: 50px;
+  .magpie-pool-box-layout-with-content {
+    margin: 10px 0 0 0;
+    width: 343px;
+  }
+  .magpie-pool-text {
+    margin: 20px 0 20px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .header-name-subtitle {
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .liquidity-pool-setting-icon {
+    justify-content: unset;
+    width: unset;
+  }
+  .text-stake-funds {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .change-protocol-text {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0;
+  }
+  .wombat-exchange-box {
+    height: 42px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .text-wombat {
+    margin: 0;
+  }
+  .purchase-insurance {
+    width: 330px;
+    height: 42px;
+    margin: 10px 0 10px 0;
+  }
+  .purchase-insurance-text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .header-dropdown-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    background: #ffffff;
+    padding: 0px 0px 20px;
+    position: absolute;
+    z-index: 1;
+    top: 101px;
+  }
+  .header-dropdown-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 10px;
+    width: 343px;
+    height: 52px;
+    background: #ffffff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #071320;
+  }
+  .governance-active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 10px;
+    width: 343px;
+    height: 52px;
+    background: #ffffff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #137ce7;
+  }
+  .connect-wallet {
+    width: 343px;
+    height: 40px;
+  }
+  .connect-wallet-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .language-and-mode-box {
+    display: flex;
+    justify-content: space-between;
+    width: 343px;
+    height: 52px;
+    align-items: center;
+    padding: 14px 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #071320;
+  }
+  .dark-light-toggle-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    gap: 10px;
+    width: 82px;
+    height: 40px;
+    background: #1e2036;
+    border-radius: 41px;
   }
   .all-wallet-box {
     width: 100%;
     left: 0;
-    display: block;
-    padding: 0;
+  }
+  .all-wallet-row {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+  }
+  .all-wallet-box {
+    width: 270px;
+    left: 28px;
+    top: 264px;
+  }
+  .connect-your-wallet-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #137ce7;
+  }
+  .mobile-myWallet {
+    width: 343px;
+    border: #137ce7 solid 1px;
+    border-radius: 6px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .myWallet-disconnect {
+    width: 343px;
+    height: 40px;
+    background: #137ce7;
+    border: 2px solid #137ce7;
+    border-radius: 200px;
+    margin-top: 20px;
   }
   .wallet-box {
-    width: 100px;
-  }
-  .audit-content {
-    left: 0;
-    width: 100%;
-  }
-  .myWallet-box {
-    left: 0;
-  }
-  .audit-content-tag-close {
-    width: 90vw;
-  }
-
-  .governance-dropdown-content {
-    left: 0;
-  }
-  .audit-content-safe-secure-text {
-    font-size: 5vw;
-  }
-  .audit-content-audit-text {
-    font-size: 7vw;
-  }
-  .stake-sub-header {
-    margin: 0;
-  }
-  .title {
-    font-size: 5vw;
-  }
-  .text-stake-funds {
-    font-size: 3vw;
-  }
-  .magpie-pool-text {
-    font-size: 3vw;
-    margin: 20px 0 20px 0;
-  }
-  .magpie-pool-header-layout,
-  .magpie-pool-frax-header-layout,
-  .magpie-pool-stake-mgp-header-layout {
-    gap: 15px;
-    height: 200px;
-  }
-  .convert-wom-text,
-  .magpie-header-text,
-  .magpie-header-amount,
-  .magpie-active-tab,
-  .magpie-inactive-tab,
-  .convert-tab-right-input-title,
-  .magpie-approve-infinity-text,
-  .convert-tab-para,
-  .magpie-content-base-text,
-  .magpie-content-base-price,
-  .text-wombat,
-  .purchase-insurance-text,
-  .text-all,
-  .text-stake {
-    font-size: 3vw;
-  }
-
-  .liquidity-pool-active-tab-text,
-  .liquidity-pool-inactive-tab-text {
-    font-size: 3vw;
-    font-weight: 600;
-  }
-  .magpie-input-box,
-  .magpie-approve,
-  .magpie-total-wom {
-    width: 100%;
-    padding-right: 0;
-    font-size: 3vw;
-  }
-  .social-media {
-    max-height: 250px;
-  }
-}
-@media (max-width: 768px) {
-  .all-amount-layout {
-    flex-direction: column;
-    width: 100%;
-    margin: 10px 0 10px 0;
-  }
-  .price-box {
-    margin: 10px 0 10px 0;
-    width: 100%;
-  }
-  .magpie-pool-header-layout,
-  .magpie-pool-frax-header-layout,
-  .magpie-pool-stake-mgp-header-layout {
-    flex-direction: column;
-    justify-content: unset;
-    align-items: unset;
-    gap: 15px;
-    height: 450px;
-  }
-  .convert-wom-text {
-    font-size: 8vw;
-  }
-  .magpie-header-text {
-    font-size: 5vw;
+    width: unset;
     margin-top: 10px;
   }
-  .magpie-header-amount {
-    font-size: 5vw;
-  }
-  .magpie-pool-box-layout-without-content {
-    width: 100%;
-    margin: 0;
-  }
-  .magpie-pool-box-layout-with-content {
-    margin: 0;
-    width: 100%;
-  }
-  .magpie-pool-text {
-    margin: 20px 0 20px 0;
-    font-size: 10vw;
+  .myWallet-amount {
+    padding: 20px;
   }
   .convert-tab {
-    display: flex;
     flex-direction: column;
+    width: 339px;
   }
-
-  .convert-tab1 {
-    display: flex;
-    width: 100%;
-  }
-
   .convert-tab-left {
     width: 100%;
   }
-  .convert-tab-right {
-    width: 100%;
+  .magpie-tab {
+    width: 339px;
   }
-  .magpie-input-title {
-    width: 80vw;
+  .convert-tab1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .magpie-input-box {
-    width: 80vw;
+    width: 319px;
   }
   .magpie-approve {
-    width: 80vw;
+    width: 319px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 0 10px 0;
   }
-  .convert-tab-para {
-    font-size: 5vw;
-    /* line-height: 25px; */
+  .convert-tab-right-input-title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .convert-tab-right-input-amount {
+    font-size: 14px;
+    line-height: 21px;
   }
   .magpie-total-wom {
-    justify-content: unset;
-    align-items: unset;
-    width: 80vw;
+    padding: 6px 0px;
+    gap: 10px;
+    width: 339px;
+    height: 52px;
+    background: #f0f5ff;
+    border-radius: 0px 0px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .magpie-content-base-text,
+  .magpie-content-base-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
   .magpie-content-base-price {
-    font-size: 5vw;
+    font-weight: 500;
   }
-  .stake-tab-layout,
+  .stake-tab-layout {
+    width: 343px;
+  }
   .unstake-tab-layout {
-    width: 100%;
-  }
-  .text-stake-funds {
-    font-size: 10vw;
-    margin-top: 20px;
-  }
-  .social-media {
-    margin: 20px 0 0 0;
-    max-height: 160px;
-  }
-  .change-protocol-text {
-    font-size: 5vw;
-    padding: 0;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .text-wombat {
-    font-size: 4vw;
-  }
-  .wombat-exchange-box {
-    margin-right: 10px;
-  }
-  .purchase-insurance {
-    width: 100%;
-    margin: 20px 0 0 0;
-    padding: 0;
-    height: 50px;
-  }
-  .purchase-insurance-text {
-    font-size: 8vw;
-  }
-  .wombat-exchange-content-pancake-box,
-  .wombat-exchange-content-lorum-ipsum-box {
-    font-size: 5vw;
-  }
-  .magpie-active-tab,
-  .magpie-inactive-tab {
-    font-size: 5vw;
+    width: 343px;
   }
 }
-
-/* HAMBURGER */
-
-.topnav {
-  overflow: hidden;
-  background-color: #137ce7;
-  position: absolute;
-  z-index: 1;
-  right: 0;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-.topnav #poolTabs {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  display: block;
+/*DropDown*/
+.liquidity-pool-dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  width: 299px;
+  height: 38px;
+  background: #137ce7;
+  border-radius: 200px;
   font-family: "Inter";
   font-style: normal;
-  font-weight: 600;
-  line-height: 19px;
-  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
 }
-
-.topnav a.icon {
-  background: linear-gradient(360deg, #c0d9ff 0.78%, #f9fbff 100%);
-  display: block;
+.liquidity-pool-dropdown-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.liquidity-pool-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  width: 299px;
+  background: white;
+  margin: 10px 0 0 10px;
+  border: lightgray 2px solid;
+  border-radius: 6px 6px 6px 6px;
   position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0;
+  z-index: 1;
+}
+.liquidity-pool-dropdown-content-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #137ce7;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.liquidity-pool-dropdown-content-text-active {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  background: #137ce7;
+  color: white;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+/*End dropdown */
 
-.active {
-  color: black;
+.choose-language-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 375px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 1;
+  top: 101px;
 }
-.icon {
-  right: 0;
+.choose-language-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #0b366b;
 }
-/*End HAmburger*/

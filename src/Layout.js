@@ -28,11 +28,13 @@ function Layout() {
     <div>
       <div className="layout">
         <Header />
-        <StakeFunds />
-        <AllAmountBox />
+        <div style={{ marginLeft: "10px", marginRight: "10px" }}>
+          <StakeFunds />
+          <AllAmountBox />
 
-        <MagpiePool />
-        <LiquidityPool />
+          <MagpiePool />
+          <LiquidityPool />
+        </div>
       </div>
       {myState && <SelectWallet />}
       {auditState && <AuditContent />}

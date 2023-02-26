@@ -41,38 +41,47 @@ function StakeFunds() {
           <SocialMedia />
         </div>
       ) : (
-        <div style={{ display: "flex" }}>
-          <div style={{ width: "85%", marginRight: "10px" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginTop: "10px",
+            alignItems: "center",
+          }}
+        >
+          <div style={{ display: "flex" }}>
             <div className="text-stake-funds">STAKE FUNDS</div>
-            <div
+            <p
               style={{
-                display: "flex",
-                flexDirection: "column",
-                marginTop: "20px",
+                borderBottom: "lightgray 2px solid",
+                width: "240px",
+                marginLeft: "10px",
               }}
-            >
-              <div className="change-protocol-text">Change Protocol</div>
-              <div onClick={handleClick} className="wombat-exchange-box">
-                <div style={{ marginTop: "6px" }}>
-                  <img src={wombatImg}></img>
-                </div>
-                <div className="text-wombat">
-                  Wombat Exchange
-                  {showContent && <WombatExchangeContent />}
-                </div>
-                <div style={{ marginTop: "6px", marginLeft: "25px" }}>
-                  <img src={wombatArrow}></img>
-                </div>
+            ></p>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "343px",
+            }}
+          >
+            <div className="change-protocol-text">Change Protocol</div>
+            <div onClick={handleClick} className="wombat-exchange-box">
+              <div className="text-wombat">
+                Wombat Exchange
+                {showContent && <WombatExchangeContent />}
+              </div>
+              <div style={{ marginLeft: "25px" }}>
+                <img src={wombatArrow}></img>
               </div>
             </div>
-            <div className="purchase-insurance">
-              <span className="purchase-insurance-text">
-                Purchase Insurance
-              </span>
-            </div>
           </div>
-          <div style={{ width: "15%" }}>
-            <SocialMedia />
+
+          <div className="purchase-insurance">
+            <span className="purchase-insurance-text">Purchase Insurance</span>
           </div>
         </div>
       )}

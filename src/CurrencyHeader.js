@@ -1,19 +1,19 @@
 import React from "react";
 import downArrow from "./assests/images/Vector (27).png";
-import Logo from "./Logo";
 import infoImg from "./assests/images/info.png";
 import useWindowDimensions from "./ScreenSize";
 
-function StakeMgpHeader() {
+function CurrencyHeader(props) {
   const { windowWidth, windowHeight } = useWindowDimensions();
   return windowWidth > 768 ? (
-    <div className="magpie-pool-stake-mgp-header-layout">
+    <div className={props.currencyClassName}>
       <div style={{ display: "flex", alignItems: "center" }}>
         <div>
-          <Logo />
+          <img src={props.currencyLogo}></img>
         </div>
-        <div className="convert-wom-text" style={{ marginLeft: "50px" }}>
-          Stake MGP
+        <div className="convert-wom-text">
+          {props.currencyTitle}
+          <div className="header-name-subtitle">{props.currencySubTitle}</div>
         </div>
       </div>
       <div>
@@ -28,7 +28,7 @@ function StakeMgpHeader() {
       </div>
       <div>
         <div className="magpie-header-amount">0.00 mWOM</div>
-        <div className="magpie-header-text">Your Staked</div>
+        <div className="magpie-header-text">Your Deposits</div>
       </div>
       <div>
         <div className="magpie-header-amount">$0.00</div>
@@ -39,7 +39,7 @@ function StakeMgpHeader() {
       </div>
     </div>
   ) : (
-    <div className="magpie-pool-stake-mgp-header-layout">
+    <div className={props.currencyClassName}>
       <div
         style={{
           display: "flex",
@@ -48,11 +48,18 @@ function StakeMgpHeader() {
         }}
       >
         <div style={{ display: "flex" }}>
-          <div style={{ marginTop: "10px", marginRight: "42px" }}>
-            <Logo />
+          <img src={props.currencyLogo}></img>
+          <div
+            className="convert-wom-text"
+            style={{
+              color: "#137CE7",
+              flexDirection: "column",
+              alignItems: "start",
+            }}
+          >
+            {props.currencyTitle}
+            <div className="header-name-subtitle">{props.currencySubTitle}</div>
           </div>
-
-          <div className="convert-wom-text">Staked MGP</div>
         </div>
         <div>
           <img src={downArrow}></img>
@@ -62,7 +69,7 @@ function StakeMgpHeader() {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          marginTop: "20px",
+          marginTop: "10px",
         }}
       >
         <div>
@@ -87,4 +94,4 @@ function StakeMgpHeader() {
     </div>
   );
 }
-export default StakeMgpHeader;
+export default CurrencyHeader;

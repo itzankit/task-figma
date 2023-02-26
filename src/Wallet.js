@@ -9,11 +9,7 @@ function Wallet(props) {
     dispatch(selectWalletCLose());
   }
   return (
-    <div
-      id={props.walletId}
-      className={`wallet-box ${props.walletPosition}`}
-      onClick={handleClick}
-    >
+    <div id={props.walletId} className="wallet-box" onClick={handleClick}>
       {console.log(props)}
       <img
         id={props.walletId}

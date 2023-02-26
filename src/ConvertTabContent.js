@@ -57,13 +57,13 @@ function ConvertTabContent() {
         </div>
       </div>
       <div className="magpie-total-wom">
-        <div className="magpie-content-base-text">
-          Total WOM Concerted
-          <span className="magpie-content-base-price">$0.00 WOM</span>
+        <div style={{ display: "flex" }}>
+          <div className="magpie-content-base-text">Total WOM Concerted</div>
+          <div className="magpie-content-base-price">$0.00 WOM</div>
         </div>
-        <div className="magpie-content-base-text">
-          Total veWOM Accrued
-          <span className="magpie-content-base-price">$0.00 veWOM</span>
+        <div style={{ display: "flex" }}>
+          <div className="magpie-content-base-text">Total veWOM Accrued</div>
+          <div className="magpie-content-base-price">$0.00 veWOM</div>
         </div>
       </div>
     </>

@@ -3,6 +3,8 @@ var INITIAL_STATE = {
   showWalletPopover: false,
   walletName: "",
   showAuditBox: false,
+  showHeaderDropdown: false,
+  showLanguageBox: false,
 };
 
 function magpieState(state = INITIAL_STATE, action) {
@@ -21,6 +23,14 @@ function magpieState(state = INITIAL_STATE, action) {
       return { ...state, showWalletPopover: false };
     case "DISCONNECTWALLET":
       return { ...state, walletName: "" };
+    case "DROPDOWNBOX":
+      return { ...state, showHeaderDropdown: !state.showHeaderDropdown };
+    case "LANGUAGEBOX":
+      return { ...state, showLanguageBox: !state.showLanguageBox };
+    case "CLOSEHEADERBOX":
+      return { ...state, showHeaderDropdown: false };
+    case "CLOSELANGUAGEBOX":
+      return { ...INITIAL_STATE, showLanguageBox: false };
     default:
       return state;
   }
